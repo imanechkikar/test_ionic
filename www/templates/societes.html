@@ -1,0 +1,24 @@
+<ion-view title="Societes">
+  <ion-content>
+    <h2> Societés </h2>
+
+    <ion-list>
+      <a class="item item-avatar"
+         ng-repeat="item in societes"
+         ui-sref="ordres"
+         ng-click="goToOrdres(item.codeSociete)"
+      >
+        
+        <h2>{{item.codeSociete}}</h2>
+        <p>{{item.nomSociete}}</p>
+      </a>
+
+    </ion-list>
+    <ion-infinite-scroll
+      ng-if="moreDataCanBeLoaded()"
+      on-infinite="loadMoreData()"
+    >
+    </ion-infinite-scroll>
+
+  </ion-content>
+</ion-view>

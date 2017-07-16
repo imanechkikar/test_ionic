@@ -1,0 +1,24 @@
+<ion-view title="detail">
+  <ion-content>
+    <div class="list card">
+
+      <div class="item item-avatar">
+
+        <h2>Ordre Num : {{ord.idOrdre}}</h2>
+
+      </div>
+
+      <div class="item item-body">
+
+
+        <p> Date : {{ord.dateOrd|date:'yyyy-MM-dd'}}</p>
+        <p> Type : {{ord.type}} </p>
+        <p> Nombre d'actions :  {{ord.nbAction}} </p>
+        <p> Prix d'une action :  {{ord.prixAction}} </p>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
